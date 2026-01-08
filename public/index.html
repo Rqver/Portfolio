@@ -14,16 +14,16 @@
 </head>
 <body class="font-jetbrains-mono bg-ctp-base">
 <main id="page-content">
-    <div class="md:ml-[20vw] ml-0 text-ctp-text">
+    <div class="md:ml-[10vw] ml-0 text-ctp-text">
         <section class="w-full max-w-2xl px-6 pt-6 md:pt-36 text-left">
             <h1 class="mb-4 text-4xl font-bold">
-                <span id="greeting" class="active invisible md:visible norris-swap" style="--swap-color: #a6e3a1" data-swap="Kia Ora!">Hi There,</span>
+                <span id="greeting" class="active invisible norris-swap" style="--swap-color: #a6e3a1" data-swap="Kia Ora!">Hi There,</span>
                 <span class="inline md:hidden">Hi,</span> I'm
                 <span class="text-ctp-sapphire">Hunter</span>
             </h1>
 
             <p class="mb-5">
-                I'm a cs student based in Auckland, NZ with an interest in backend and full-stack software development. This portfolio serves as a record of some of the commercial and personal projects I've worked on.
+                I'm a cs student based in Auckland, NZ with an interest in backend and full-stack software development. This portfolio serves as a record of some of the <span class="text-ctp-flamingo">commercial</span> and <span class="text-ctp-teal">personal</span> projects I've worked on.
             </p>
 
             <div class="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2 ">
@@ -60,20 +60,65 @@
             </div>
         </section>
 
-        <section class="w-full max-w-5xl px-6 pt-12 md:pt-20">
-            <h2 class="text-2xl md:text-3xl font-bold mb-8">Projects</h2>
-            <a href="/projects/dispatch-desk">Dispatch Desk Page</a>
+        <section class="mt-16 w-full px-6 pt-6">
+            <h2 class="text-3xl font-bold mb-10">Projects</h2>
+
+            <div class="w-full pr-6 md:pr-12 xl:pr-24">
+                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                    <a href="/projects/dispatch-desk" class="group block border border-ctp-surface2 rounded-sm overflow-hidden transition hover:bg-ctp-surface0/20">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="todo" class="w-full h-full object-cover transition">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg inline-flex items-center gap-2">
+                                <span class="border-b-2 border-ctp-teal">
+                                    Dispatch Desk
+                                </span>
+
+                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
+                                    →
+                                </span>
+                            </h3>
+
+                            <p class="mt-2 text-sm text-ctp-subtext1">
+                                TODO Description
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="/projects/dispatch-desk" class="group block border border-ctp-surface2 rounded-sm overflow-hidden transition hover:bg-ctp-surface0/20">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="todo" class="w-full h-full object-cover transition">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg inline-flex items-center gap-2">
+                                <span class="border-b-2 border-ctp-flamingo">
+                                    Dispatch Desk
+                                </span>
+
+                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-flamingo">
+                                    →
+                                </span>
+                            </h3>
+
+                            <p class="mt-2 text-sm text-ctp-subtext1">
+                                TODO Description
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
     </div>
 </main>
 </body>
 <script>
 const greeting = document.getElementById("greeting");
-  if (greeting) {
+if (greeting) {
     setTimeout(() => {
       greeting.classList.remove("active");
-    }, 1200);
-  }
+    }, 1400);
+}
 </script>
 <script src="/js/preload.js"></script>
 </html>

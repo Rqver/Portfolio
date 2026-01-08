@@ -1,8 +1,8 @@
 // JS For the text swap/flip effect inspired by https://landonorris.com/
 
-document.addEventListener("DOMContentLoaded", () => {
-    if (!window.matchMedia("(min-width: 768px)").matches) return;
+const md = window.matchMedia("(min-width: 768px)");
 
+function initSwap(){
     const targets = document.querySelectorAll(".norris-swap");
     targets.forEach((el) => {
         const originalText = el.textContent;
@@ -31,4 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         el.classList.remove("invisible");
       });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (md.matches) initSwap();
+});
+
+md.addEventListener("change", (e) => {
+    if (e.matches) initSwap();
 });
