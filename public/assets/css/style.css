@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@catppuccin/tailwindcss/mocha.css";
+@import "@catppuccin/tailwindcss/mocha.css"; /* this seems to import every single colour in the catppuccin pallete. Once i have a design/all colours I want to use in use, should just add them here instead of using this*/
 
 @theme {
   --font-jetbrains-mono: "Jetbrains Mono", monospace;
