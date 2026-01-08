@@ -1,5 +1,4 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -16,8 +15,6 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-extralight: 200;
     --font-weight-bold: 700;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-jetbrains-mono: "Jetbrains Mono", monospace;
@@ -187,9 +184,6 @@
   .flex {
     display: flex;
   }
-  .hidden {
-    display: none;
-  }
   .inline {
     display: inline;
   }
@@ -285,6 +279,11 @@
       }
     }
   }
+  .md\:visible {
+    @media (width >= 48rem) {
+      visibility: visible;
+    }
+  }
   .md\:ml-\[20vw\] {
     @media (width >= 48rem) {
       margin-left: 20vw;
@@ -293,11 +292,6 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
-    }
-  }
-  .md\:inline {
-    @media (width >= 48rem) {
-      display: inline;
     }
   }
   .md\:pt-36 {

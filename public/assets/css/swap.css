@@ -1,10 +1,16 @@
 /* CSS For the text swap/flip effect inspired by https://landonorris.com/ */
 
 .norris-swap {
-    display: inline-flex;
+    display: none;
     overflow: hidden;
     text-decoration: none;
     vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+    .norris-swap {
+        display: inline-flex;
+    }
 }
 
 .norris-swap span.char {
