@@ -181,6 +181,18 @@
   .invisible {
     visibility: hidden;
   }
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .right-6 {
+    right: calc(var(--spacing) * 6);
+  }
+  .bottom-6 {
+    bottom: calc(var(--spacing) * 6);
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -199,11 +211,17 @@
       max-width: 96rem;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
+  }
+  .mt-24 {
+    margin-top: calc(var(--spacing) * 24);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -262,6 +280,12 @@
     --tw-scale-y: 90%;
     --tw-scale-z: 90%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -322,6 +346,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -336,6 +363,9 @@
   }
   .pr-6 {
     padding-right: calc(var(--spacing) * 6);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
   }
   .text-center {
     text-align: center;
@@ -421,6 +451,14 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         opacity: 100%;
+      }
+    }
+  }
+  .hover\:-translate-y-1 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * -1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
       }
     }
   }
@@ -1603,6 +1641,26 @@
   inherits: false;
   initial-value: 1;
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1625,6 +1683,11 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-duration: initial;
