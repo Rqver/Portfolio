@@ -2,7 +2,7 @@
 
 const md = window.matchMedia("(min-width: 768px)");
 
-function initSwap(){
+window.initSwap = function(playIntro = false) {
     const targets = document.querySelectorAll(".norris-swap");
     targets.forEach((el) => {
         const originalText = el.textContent;
@@ -29,12 +29,20 @@ function initSwap(){
           el.appendChild(span);
         });
 
+        if (playIntro && el.classList.contains("active")) {
+            setTimeout(() => {
+                el.classList.remove("active");
+            }, 1400);
+        } else {
+            el.classList.remove("active");
+        }
+
         el.classList.remove("invisible");
       });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    if (md.matches) initSwap();
+    window.initSwap(true);
 });
 
 md.addEventListener("change", (e) => {

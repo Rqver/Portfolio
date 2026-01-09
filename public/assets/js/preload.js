@@ -37,6 +37,7 @@ async function loadUrl(url){
     }
 
     container.innerHTML = newContent;
+    window.initSwap();
 }
 
 document.body.addEventListener("click", async (e) => {
