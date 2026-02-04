@@ -37,41 +37,42 @@
         </div>
 
         <section class="w-full py-12">
-            <div class="embla overflow-hidden">
+            <div class="embla overflow-hidden opacity-0 transition-opacity duration-280">
                 <div class="embla__container flex touch-pan-y pr-4 md:pr-8">
                     <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
                         <div class="relative aspect-video shadow-xl">
-                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="https://raw.githubusercontent.com/Rqver/DispatchDesk/refs/heads/main/docs/demo-pics/img.png">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/dispatch-desk/hero.webp">
+                        </div>
+                    </div>
+
+
+                    <div class="embla__slide flex-none w-[28.5vw] md:w-[285px] pl-4 md:pl-8">
+                        <div class="relative h-full overflow-hidden shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/dispatch-desk/mobile.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/dispatch-desk/story.png">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="https://placehold.co/1920x1080?text=Desktop+Slide+3">
                         </div>
                     </div>
 
                     <div class="embla__slide flex-none w-[28.5vw] md:w-[285px] pl-4 md:pl-8">
                         <div class="relative h-full overflow-hidden shadow-xl">
-                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="/img/mobile.png">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/dispatch-desk/mobile_two.webp">
                         </div>
                     </div>
 
                     <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
                         <div class="relative aspect-video shadow-xl">
-                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="/img/story.png">
-                        </div>
-                    </div>
-
-                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
-                        <div class="relative aspect-video shadow-xl">
-                            <img class="absolute inset-0 w-full h-full object-cover" src="https://placehold.co/1920x1080?text=Desktop+Slide+3">
-                        </div>
-                    </div>
-
-                    <div class="embla__slide flex-none w-[28.5vw] md:w-[285px] pl-4 md:pl-8">
-                        <div class="relative h-full overflow-hidden shadow-xl">
-                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="/img/mobile_two.png">
-                        </div>
-                    </div>
-
-                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
-                        <div class="relative aspect-video shadow-xl">
-                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="https://raw.githubusercontent.com/Rqver/DispatchDesk/refs/heads/main/docs/demo-pics/img_3.png">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="https://raw.githubusercontent.com/Rqver/DispatchDesk/refs/heads/main/docs/demo-pics/img_3.png">
                         </div>
                     </div>
                 </div>
@@ -85,7 +86,15 @@
             const initEmbla = () => {
                 const emblaNode = document.querySelector('.embla');
                 if (typeof EmblaCarousel !== 'undefined' && emblaNode) {
-                    EmblaCarousel(emblaNode, { loop: true, dragFree: true, draggable: true });
+                    const emblaApi = EmblaCarousel(emblaNode, { loop: true, dragFree: true, draggable: true });
+
+                    requestAnimationFrame(() => {
+                        emblaNode.classList.remove('opacity-0');
+                        emblaNode.classList.add('opacity-100');
+
+                        emblaApi.reInit();
+                    });
+
                 } else {
                     setTimeout(initEmbla, 50);
                 }
@@ -104,6 +113,7 @@
     </button>
 </footer>
 <script src="/js/preload.js"></script>
+<script src="/js/images.js"></script>
 <script src="/js/footer.js"></script>
 </body>
 </html>

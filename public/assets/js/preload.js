@@ -55,6 +55,7 @@ async function loadUrl(url){
     });
 
     window.initSwap();
+    window.initImages();
     document.title = cached.title;
 }
 
