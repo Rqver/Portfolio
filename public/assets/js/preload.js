@@ -37,6 +37,26 @@ async function loadUrl(url){
     }
 
     container.innerHTML = newContent;
+
+    container.querySelectorAll("script").forEach(oldScript => {
+        if (oldScript.src) {
+            const existing = document.querySelector(`script[src="${oldScript.src}"]`);
+
+            if (existing && !container.contains(existing)) {
+                return;
+            }
+        }
+
+        const newScript = document.createElement("script");
+
+        Array.from(oldScript.attributes).forEach(attr =>
+            newScript.setAttribute(attr.name, attr.value)
+        );
+
+        newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
+
     window.initSwap();
 }
 
@@ -47,6 +67,7 @@ document.body.addEventListener("click", async (e) => {
     const url = link.href;
 
     loadUrl(url)
+    window.scroll({ top: 0})
 
     history.pushState(null, "", url);
 })
