@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=block" rel="stylesheet">
 
     <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="/css/scrollbar.css" rel="stylesheet">
 
     <link href="/css/swap.css" rel="stylesheet">
     <script src="/js/swap.js"></script>
@@ -39,33 +40,38 @@
             <div class="embla overflow-hidden">
                 <div class="embla__container flex touch-pan-y pr-4 md:pr-8">
                     <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
-                        <div class="relative aspect-video bg-gray-100 shadow-xl">
-                            <img class="absolute inset-0 w-full h-full object-cover" src="https://placehold.co/1920x1080?text=Desktop+Slide+1">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="https://raw.githubusercontent.com/Rqver/DispatchDesk/refs/heads/main/docs/demo-pics/img.png">
                         </div>
                     </div>
 
-                    <!-- todo this sucks -->
-                    <div class="embla__slide flex-none w-[50vw] md:w-[285px] min-w-0 pl-4 md:pl-8">
-                        <div class="relative aspect-[9/16] bg-gray-800 shadow-xl border-4 border-gray-900">
-                            <img class="absolute inset-0 w-full h-full object-cover" src="https://placehold.co/1080x1920/222/FFF?text=Mobile+App">
-                        </div>
-                    </div>
-
-                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
-                        <div class="relative aspect-video bg-gray-100 shadow-xl">
-                            <img class="absolute inset-0 w-full h-full object-cover" src="https://placehold.co/1920x1080?text=Desktop+Slide+2">
+                    <div class="embla__slide flex-none w-[28.5vw] md:w-[285px] pl-4 md:pl-8">
+                        <div class="relative h-full overflow-hidden shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="/img/mobile.png">
                         </div>
                     </div>
 
                     <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
-                        <div class="relative aspect-video bg-gray-100 shadow-xl">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="/img/story.png">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
                             <img class="absolute inset-0 w-full h-full object-cover" src="https://placehold.co/1920x1080?text=Desktop+Slide+3">
                         </div>
                     </div>
 
+                    <div class="embla__slide flex-none w-[28.5vw] md:w-[285px] pl-4 md:pl-8">
+                        <div class="relative h-full overflow-hidden shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="/img/mobile_two.png">
+                        </div>
+                    </div>
+
                     <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
-                        <div class="relative aspect-video bg-gray-100 shadow-xl">
-                            <img class="absolute inset-0 w-full h-full object-cover" src="https://placehold.co/1920x1080?text=Desktop+Slide+4">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top" src="https://raw.githubusercontent.com/Rqver/DispatchDesk/refs/heads/main/docs/demo-pics/img_3.png">
                         </div>
                     </div>
                 </div>
@@ -98,5 +104,6 @@
     </button>
 </footer>
 <script src="/js/preload.js"></script>
+<script src="/js/footer.js"></script>
 </body>
 </html>

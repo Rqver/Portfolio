@@ -12,7 +12,9 @@ async function preload(url){
     temp.innerHTML = html;
 
     const content = temp.querySelector('#page-content').innerHTML;
-    cache.set(url, content);
+    const title = temp.querySelector('title')?.textContent || document.title;
+
+    cache.set(url, { content, title });
 }
 
 document.body.addEventListener("mouseover", (e) => {
@@ -23,20 +25,15 @@ document.body.addEventListener("mouseover", (e) => {
 });
 
 async function loadUrl(url){
-    let newContent = cache.get(url);
+    let cached = cache.get(url);
 
-    if (!newContent) {
-        const res = await fetch(url);
-        const html = await res.text();
-
-        const temp = document.createElement('div');
-        temp.innerHTML = html;
-        newContent = temp.querySelector('#page-content').innerHTML;
-
-        cache.set(url, newContent);
+    if (!cached) {
+        await preload(url);
+        cached = cache.get(url);
     }
 
-    container.innerHTML = newContent;
+
+    container.innerHTML = cached.content;
 
     container.querySelectorAll("script").forEach(oldScript => {
         if (oldScript.src) {
@@ -58,6 +55,7 @@ async function loadUrl(url){
     });
 
     window.initSwap();
+    document.title = cached.title;
 }
 
 document.body.addEventListener("click", async (e) => {
@@ -73,6 +71,7 @@ document.body.addEventListener("click", async (e) => {
 })
 
 window.addEventListener("popstate", async () => {
+    console.log("ello")
     loadUrl(location.href);
 })
 

@@ -8,8 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-100: oklch(96.7% 0.003 264.542);
-    --color-gray-800: oklch(27.8% 0.033 256.848);
-    --color-gray-900: oklch(21% 0.034 264.665);
     --spacing: 0.25rem;
     --container-2xl: 42rem;
     --container-6xl: 72rem;
@@ -25,7 +23,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-sm: 0.25rem;
-    --blur-sm: 8px;
     --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -267,9 +264,6 @@
   .inline-flex {
     display: inline-flex;
   }
-  .aspect-\[9\/16\] {
-    aspect-ratio: 9/16;
-  }
   .aspect-video {
     aspect-ratio: var(--aspect-video);
   }
@@ -285,14 +279,11 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
-  .w-\[50vw\] {
-    width: 50vw;
+  .w-\[28\.5vw\] {
+    width: 28.5vw;
   }
   .w-\[90vw\] {
     width: 90vw;
-  }
-  .w-\[900px\] {
-    width: 900px;
   }
   .w-full {
     width: 100%;
@@ -372,10 +363,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-4 {
-    border-style: var(--tw-border-style);
-    border-width: 4px;
-  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
@@ -389,23 +376,20 @@
   .border-ctp-teal {
     border-color: var(--catppuccin-color-teal);
   }
-  .border-gray-900 {
-    border-color: var(--color-gray-900);
-  }
   .bg-ctp-base {
     background-color: var(--catppuccin-color-base);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
-  .bg-gray-800 {
-    background-color: var(--color-gray-800);
-  }
   .fill-current {
     fill: currentcolor;
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-top {
+    object-position: top;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -439,9 +423,6 @@
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
-  }
-  .pl-8 {
-    padding-left: calc(var(--spacing) * 8);
   }
   .text-center {
     text-align: center;
