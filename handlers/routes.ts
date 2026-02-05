@@ -79,4 +79,8 @@ export async function initRoutes(app: Express, dir: string) {
             console.error(`Error importing or processing route file ${filePath}:`, e);
         }
     }
+
+    app.use((_, res) => {
+        res.redirect("/")
+    })
 }
