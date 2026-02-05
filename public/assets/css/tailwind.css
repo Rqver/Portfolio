@@ -586,6 +586,48 @@
       }
     }
   }
+  .selection\:bg-ctp-flamingo\/30 {
+    & *::selection {
+      background-color: var(--catppuccin-color-flamingo);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--catppuccin-color-flamingo) 30%, transparent);
+      }
+    }
+    &::selection {
+      background-color: var(--catppuccin-color-flamingo);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--catppuccin-color-flamingo) 30%, transparent);
+      }
+    }
+  }
+  .selection\:bg-ctp-sapphire\/30 {
+    & *::selection {
+      background-color: var(--catppuccin-color-sapphire);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--catppuccin-color-sapphire) 30%, transparent);
+      }
+    }
+    &::selection {
+      background-color: var(--catppuccin-color-sapphire);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--catppuccin-color-sapphire) 30%, transparent);
+      }
+    }
+  }
+  .selection\:bg-ctp-teal\/30 {
+    & *::selection {
+      background-color: var(--catppuccin-color-teal);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--catppuccin-color-teal) 30%, transparent);
+      }
+    }
+    &::selection {
+      background-color: var(--catppuccin-color-teal);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--catppuccin-color-teal) 30%, transparent);
+      }
+    }
+  }
   .hover\:-translate-y-1 {
     &:hover {
       @media (hover: hover) {

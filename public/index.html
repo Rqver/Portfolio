@@ -17,17 +17,17 @@
 <main id="page-content">
     <div class="md:ml-[10vw] ml-0 text-ctp-text">
         <section class="w-full max-w-2xl px-6 pt-6 md:pt-36 text-left">
-            <h1 class="mb-4 text-4xl font-bold">
+            <h1 class="mb-4 text-4xl font-bold select-none">
                 <span id="greeting" class="active invisible norris-swap" style="--swap-color: #a6e3a1" data-swap="Kia Ora!">Hi There,</span>
                 <span class="inline md:hidden">Hi,</span> I'm
                 <span class="text-ctp-sapphire">Hunter</span>
             </h1>
 
             <p class="mb-5">
-                I'm a cs student based in Auckland, NZ with an interest in backend and full-stack software development. This portfolio serves as a record of some of the <span class="text-ctp-flamingo">commercial</span> and <span class="text-ctp-teal">personal</span> projects I've worked on.
+                <span class="selection:bg-ctp-sapphire/30">I'm a cs student based in Auckland, NZ with an interest in backend and full-stack software development. This portfolio serves as a record of some of the </span><span class="text-ctp-flamingo selection:bg-ctp-flamingo/30">commercial</span><span class="selection:bg-ctp-sapphire/30"> and </span><span class="text-ctp-teal selection:bg-ctp-teal/30">personal</span><span class="selection:bg-ctp-sapphire/30"> projects I've worked on.</span>
             </p>
 
-            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2 ">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2 select-none">
                 <a href="https://github.com/rqver" target="_blank" class="group inline-flex items-center gap-1 text-ctp-text hover:text-ctp-sapphire">
                     <svg viewBox="0 0 24 24" class="h-5 w-5 scale-90 fill-current" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.0744 2.9938C4.13263 1.96371 4.37869 1.51577 5.08432 1.15606C5.84357 0.768899 7.04106 0.949072 8.45014 1.66261C9.05706 1.97009 9.11886 1.97635 10.1825 1.83998C11.5963 1.65865 13.4164 1.65929 14.7213 1.84164C15.7081 1.97954 15.7729 1.97265 16.3813 1.66453C18.3814 0.651679 19.9605 0.71795 20.5323 1.8387C20.8177 2.39812 20.8707 3.84971 20.6494 5.04695C20.5267 5.71069 20.5397 5.79356 20.8353 6.22912C22.915 9.29385 21.4165 14.2616 17.8528 16.1155C17.5801 16.2574 17.3503 16.3452 17.163 16.4167C16.5879 16.6363 16.4133 16.703 16.6247 17.7138C16.7265 18.2 16.8491 19.4088 16.8973 20.4002C16.9844 22.1922 16.9831 22.2047 16.6688 22.5703C16.241 23.0676 15.6244 23.076 15.2066 22.5902C14.9341 22.2734 14.9075 22.1238 14.9075 20.9015C14.9075 19.0952 14.7095 17.8946 14.2417 16.8658C13.6854 15.6415 14.0978 15.185 15.37 14.9114C17.1383 14.531 18.5194 13.4397 19.2892 11.8146C20.0211 10.2698 20.1314 8.13501 18.8082 6.83668C18.4319 6.3895 18.4057 5.98446 18.6744 4.76309C18.7748 4.3066 18.859 3.71768 18.8615 3.45425C18.8653 3.03823 18.8274 2.97541 18.5719 2.97541C18.4102 2.97541 17.7924 3.21062 17.1992 3.49805L16.2524 3.95695C16.1663 3.99866 16.07 4.0147 15.975 4.0038C13.5675 3.72746 11.2799 3.72319 8.86062 4.00488C8.76526 4.01598 8.66853 3.99994 8.58215 3.95802L7.63585 3.49882C7.04259 3.21087 6.42482 2.97541 6.26317 2.97541C5.88941 2.97541 5.88379 3.25135 6.22447 4.89078C6.43258 5.89203 6.57262 6.11513 5.97101 6.91572C5.06925 8.11576 4.844 9.60592 5.32757 11.1716C5.93704 13.1446 7.4295 14.4775 9.52773 14.9222C10.7926 15.1903 11.1232 15.5401 10.6402 16.9905C10.26 18.1319 10.0196 18.4261 9.46707 18.4261C8.72365 18.4261 8.25796 17.7821 8.51424 17.1082C8.62712 16.8112 8.59354 16.7795 7.89711 16.5255C5.77117 15.7504 4.14514 14.0131 3.40172 11.7223C2.82711 9.95184 3.07994 7.64739 4.00175 6.25453C4.31561 5.78028 4.32047 5.74006 4.174 4.83217C4.09113 4.31822 4.04631 3.49103 4.0744 2.9938Z"/>
@@ -62,15 +62,14 @@
         </section>
 
         <section class="mt-16 w-full px-6 pt-6">
-            <h2 class="text-3xl font-bold mb-10">Projects</h2>
-
+            <h2 class="text-3xl font-bold mb-10 selection:bg-ctp-sapphire/30">Projects</h2>
             <div class="w-full pr-6 md:pr-12 xl:pr-32">
                 <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                     <a href="/projects/dispatch-desk" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/dispatch-desk/hero.webp" class="w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="/img/dispatch-desk/hero.webp" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
                                 <span class="border-b-2 border-ctp-teal">
                                     Dispatch Desk
@@ -89,9 +88,9 @@
 
                     <a href="/projects/drive-times" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="todo" class="w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="todo" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
                                 <span class="border-b-2 border-ctp-teal">
                                     FENZ Drive Times
@@ -110,9 +109,9 @@
 
                     <a href="/projects/bbyc/mainsheet" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="todo" class="w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="todo" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 selection:bg-ctp-flamingo/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
                                 <span class="border-b-2 border-ctp-flamingo">
                                     Mainsheet
@@ -131,9 +130,9 @@
 
                     <a href="/projects/frontpage" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="todo" class="w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="todo" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
                                 <span class="border-b-2 border-ctp-teal">
                                     Frontpage
@@ -152,9 +151,9 @@
 
                     <a href="/projects/audio-tui" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="todo" class="w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="todo" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
                                 <span class="border-b-2 border-ctp-teal">
                                     Audio TUI
@@ -173,9 +172,9 @@
 
                     <a href="/projects/rq-dogs" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="todo" class="w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="todo" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
                                 <span class="border-b-2 border-ctp-teal">
                                     Rq-Dogs
@@ -194,9 +193,9 @@
 
                     <a href="/projects/bbyc/manifest" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="todo" class="w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="todo" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 selection:bg-ctp-flamingo/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
                                 <span class="border-b-2 border-ctp-flamingo">
                                     Manifest
@@ -215,9 +214,9 @@
 
                     <a href="/projects/portfolio" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="todo" class="w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="todo" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
                                 <span class="border-b-2 border-ctp-teal">
                                     Portfolio Website
@@ -237,9 +236,9 @@
 
                     <a href="/projects/bbyc/lighthouse" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="todo" class="w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="todo" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 selection:bg-ctp-flamingo/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
                                 <span class="border-b-2 border-ctp-flamingo">
                                     Lighthouse
@@ -260,11 +259,11 @@
         </section>
     </div>
 </main>
-<footer class="mt-24 px-6 pb-8 text-sm text-ctp-subtext1 text-center relative">
+<footer class="mt-24 px-6 pb-8 text-sm text-ctp-subtext1 text-center relative selection:bg-ctp-sapphire/30">
     <div class="max-w-2xl mx-auto">
         © <span id="currentYear"></span> Hunter Y
     </div>
-    <button id="backToTop" class="absolute right-6 bottom-6 text-ctp-subtext1 p-3 transition transform hover:-translate-y-1 cursor-pointer">
+    <button id="backToTop" class="absolute right-6 bottom-6 text-ctp-subtext1 p-3 transition transform hover:-translate-y-1 cursor-pointer select-none">
        ↑ Top
     </button>
 </footer>
