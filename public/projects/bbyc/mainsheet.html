@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mainsheet | Hunter Y</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=block" rel="stylesheet">
+
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="/css/scrollbar.css" rel="stylesheet">
+
+    <link href="/css/swap.css" rel="stylesheet">
+    <script src="/js/swap.js"></script>
+</head>
+<body class="font-jetbrains-mono bg-ctp-base text-ctp-text">
+
+<main id="page-content">
+    <link rel="stylesheet" href="https://unpkg.com/embla-carousel/embla-carousel.min.css">
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <div class="min-h-screen">
+        <div class="md:ml-[10vw] ml-0 flex flex-col">
+            <section class="w-full max-w-6xl px-6 pt-6 md:pt-16 text-left">
+                <a href="/public" class="group inline-flex items-center gap-2 text-ctp-subtext1 hover:text-ctp-flamingo transition-colors mb-8 text-sm select-none">
+                    <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+                    Back to Projects
+                </a>
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+
+                    <div class="max-w-2xl">
+                        <h1 class="text-4xl font-bold text-ctp-flamingo mb-2 selection:bg-ctp-flamingo/30">Mainsheet</h1>
+                        <p class="text-ctp-subtext0 selection:bg-ctp-sapphire/30">An all-in-one Yacht Club staff & members portal.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="w-full py-12">
+            <div class="embla overflow-hidden opacity-0 transition-opacity duration-280 select-none">
+                <div class="embla__container flex touch-pan-y pr-4 md:pr-8">
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-280" src="/img/mainsheet/hero.webp">
+                        </div>
+                    </div>
+
+
+                    <div class="embla__slide flex-none w-[28.5vw] md:w-[285px] pl-4 md:pl-8">
+                        <div class="relative h-full overflow-hidden shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/mainsheet/mobile.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/mainsheet/members.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/mainsheet/booking.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[28.5vw] md:w-[285px] pl-4 md:pl-8">
+                        <div class="relative h-full overflow-hidden shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/mainsheet/documents.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/mainsheet/staff_booking.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/mainsheet/manage_booking.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/mainsheet/restricted_bookings.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/mainsheet/member_overview.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        {
+            const initEmbla = () => {
+                const emblaNode = document.querySelector('.embla');
+                if (typeof EmblaCarousel !== 'undefined' && emblaNode) {
+                    const emblaApi = EmblaCarousel(emblaNode, { loop: true, dragFree: true, draggable: true });
+
+                    requestAnimationFrame(() => {
+                        emblaNode.classList.remove('opacity-0');
+                        emblaNode.classList.add('opacity-100');
+
+                        emblaApi.reInit();
+                    });
+
+                } else {
+                    setTimeout(initEmbla, 50);
+                }
+            };
+
+            initEmbla();
+        }
+    </script>
+</main>
+<footer class="mt-24 px-6 pb-8 text-sm text-ctp-subtext1 text-center relative selection:bg-ctp-sapphire/30">
+    <div class="max-w-2xl mx-auto">
+        © <span id="currentYear"></span> Hunter Y
+    </div>
+    <button id="backToTop" class="absolute right-6 bottom-6 text-ctp-subtext1 p-3 transition transform hover:-translate-y-1 cursor-pointer select-none">
+        ↑ Top
+    </button>
+</footer>
+<script src="/js/preload.js"></script>
+<script src="/js/images.js"></script>
+<script src="/js/footer.js"></script>
+</body>
+</html>

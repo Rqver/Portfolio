@@ -61,7 +61,7 @@ async function loadUrl(url){
 
 document.body.addEventListener("click", async (e) => {
     const link = e.target.closest("a");
-    if (!link || link.target === "_blank") return;
+    if (!link || link.target === "_blank" || e.ctrlKey || e.metaKey || e.shiftKey) return;
     e.preventDefault();
     const url = link.href;
 
@@ -72,7 +72,6 @@ document.body.addEventListener("click", async (e) => {
 })
 
 window.addEventListener("popstate", async () => {
-    console.log("ello")
     loadUrl(location.href);
 })
 
