@@ -405,6 +405,9 @@
   .object-center {
     object-position: center;
   }
+  .object-left {
+    object-position: left;
+  }
   .object-top {
     object-position: top;
   }
@@ -646,6 +649,13 @@
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--catppuccin-color-surface0) 20%, transparent);
         }
+      }
+    }
+  }
+  .hover\:text-ctp-flamingo {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--catppuccin-color-flamingo);
       }
     }
   }
