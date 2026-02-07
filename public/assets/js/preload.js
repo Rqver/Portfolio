@@ -56,6 +56,7 @@ async function loadUrl(url){
 
     window.initSwap();
     window.initImages();
+    window.initToolTips();
     document.title = cached.title;
 }
 
