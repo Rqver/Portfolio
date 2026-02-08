@@ -97,6 +97,39 @@
             </div>
         </section>
 
+        <div class="md:ml-[10vw] ml-0 flex flex-col">
+            <section class="w-full max-w-7xl px-6 pt-2 md:pt-6 text-left">
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">About Drive Times</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>Drive Times gives you the ability to look up <span class="tooltip"><template>Fire & Emergency NZ</template>FENZ</span> response times to any address in NZ, and presents a map of colour-coded response times across the country. You can also apply modifications to these simulations and maps, including career firefighter strikes, which at the time of writing are happening twice-weekly.</p>
+                        <p>Clicking on any address on the map, or searching for an address or place, displays the nine closest fire stations to that address. The route each station would take is rendered on the map, and the drive time (at road speed) is used to sort the colour-coding and list of stations on the right-hand-side panel.</p>
+                        <p>You can also apply modifications to these address checks. If '<span class="tooltip"><template><a href="https://www.nzpfu.org.nz/" target="_blank" class="text-ctp-teal underline">New Zealand Professional Firefighters Union</a></template>NZPFU</span> Strike' is selected, Career and <span class="tooltip"><template>Although composite stations are partly crewed by Volunteers, almost all either cannot crew during the day when the strikes take place, or choose not to respond to support the career firefighters.</template>Composite</span> stations are excluded from the results, leaving volunteer & rural stations. If 'Volunteer Delay' is selected, all volunteer & rural stations have 3 minutes added to their drive/response time, to account for the delay of volunteers driving to the station.</p>
+                        <p>When you are not viewing response times to a specific address, the map renders layers of colours based on drive time. Everywhere green is within 8 minutes drive of a fire station, orange 10 minutes, red 15 minutes, and un-coloured areas are more than 15 minutes away.</p>
+                        <p>While generating these isochrones are computationally easy, the process of de-duplication between all Isochrones (e.g. an address might be within one station's orange zone and another's red zone, so the red zone needs to be cut out of that area as to only show the orange/best zone), especially in urban areas, takes a <span class="tooltip"><template>~15 Minutes on a gaming PC</template>non-trivial</span> amount of time. As such, it's only done <span class="tooltip"><template>(Assuming no changes to the stations data set)</template>once</span> on first launch of the program, and saved in JSON.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Why</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>This is interesting data that is otherwise hard to visualize. FENZ don't currently use GPS for dispatching, instead using <span class="tooltip"><template>Pre-Determined Attendance</template>PDAs</span> and pre-configured zones, e.g.; all structure fires in X area will have station A responded, followed by station B, etc.. I've shared this project with both career & volunteer firefighter mates who have all found it interesting to compare and highlight <span class="tooltip"><template>(And inefficiencies)</template>differences</span> between the current PDA system and GPS Dispatching. Regardless of these differences, this project's outputs using GPS are, in most cases, accurate for a FENZ turnout to any address and thus makes for interesting and informative data.</p>
+                        <p>I also wanted a way to visually represent the coverage of career stations versus volunteer/rural stations, especially amidst the twice-weekly <a href="https://direemergency.nz/" target="_blank" class="text-ctp-teal underline">Career Firefighter Strikes</a>.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Tech Stack</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <ul class="list-disc list-inside">
+                            <li>Written in TypeScript using <a href="https://deno.com/" target="_blank" class="text-ctp-teal underline">Deno</a> as a runtime.</li>
+                            <li>The frontend is built using <a href="https://tailwindcss.com/" target="_blank" class="text-ctp-teal underline">Tailwind CSS</a>.</li>
+                            <li>Isochrones and responses are generated by <a href="https://openrouteservice.org/" target="_blank" class="text-ctp-teal underline">Open Route Service</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
     <script>
