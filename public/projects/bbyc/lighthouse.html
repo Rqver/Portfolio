@@ -59,6 +59,38 @@
                 </div>
             </div>
         </section>
+
+        <div class="md:ml-[10vw] ml-0 flex flex-col">
+            <section class="w-full max-w-[100rem] px-6 md:pr-24 pt-2 md:pt-6 text-left">
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">About Lighthouse</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>Lighthouse is the bridge between the Club's <span class="tooltip"><template>MYOB</template>accounting software</span>, the custom software I've written for the Club, and the Club's new Point-of-Sale software. There's no frontend to the project, hence the pictures of the Club instead.</p>
+                        <p>Lighthouse uses MYOB's API to poll for the membership list every 15 minutes. Several checks are ran on each member to ensure their membership is valid, before being upserted into a PostgreSQL database. Said database is what <a href="/projects/bbyc/mainsheet" class="text-ctp-flamingo underline">Mainsheet</a> & <a href="/projects/bbyc/manifest" class="text-ctp-flamingo underline">Manifest</a> use to source member information.</p>
+                        <p>As a part of the Club's digital overhaul, the bar & restaurant Point-of-Sale software was upgraded, and the Club wanted the ability to record what members purchase what & when. Members can scan their membership card at the bar, the FOH staff are given the member's name, and the purchase is associated with the member. Lighthouse is responsible for upserting and editing the Point-of-Sale software's record of club members, however the implementation of this is unfortunately protected by an NDA.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Why</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>The Club is undergoing/underwent a transformation into the digital era and I worked with/for the Club on doing so.</p>
+                        <p>Creating Lighthouse allowed me to massively simplify the way my other BBYC projects accessed member information.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Tech Stack</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <ul class="list-disc list-inside">
+                            <li>Written in TypeScript using <a href="https://deno.com/" target="_blank" class="text-ctp-flamingo underline">Deno</a> as a runtime.</li>
+                            <li><a href="https://www.postgresql.org/" target="_blank" class="text-ctp-flamingo underline">PostgreSQL</a> is used as a database.</li>
+                            <li>I was/am the sole developer working on this for the Club, however I worked with/for the Club Management, Board, and Digital Committee in the design and implementation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
     <script>
