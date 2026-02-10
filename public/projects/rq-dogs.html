@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RQ-Dogs | Hunter Y</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=block" rel="stylesheet">
+
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="/css/scrollbar.css" rel="stylesheet">
+
+    <link href="/css/swap.css" rel="stylesheet">
+    <script src="/js/swap.js"></script>
+</head>
+<body class="font-jetbrains-mono bg-ctp-base text-ctp-text">
+
+<main id="page-content">
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <div class="min-h-screen">
+        <div class="md:ml-[10vw] ml-0 flex flex-col">
+            <section class="w-full max-w-6xl px-6 pt-6 md:pt-16 text-left">
+                <a href="/public" class="group inline-flex items-center gap-2 text-ctp-subtext1 hover:text-ctp-flamingo transition-colors mb-8 text-sm select-none">
+                    <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+                    Back to Projects
+                </a>
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+
+                    <div class="max-w-2xl">
+                        <h1 class="text-4xl font-bold text-ctp-flamingo mb-2 selection:bg-ctp-flamingo/30">RQ-Dogs</h1>
+                        <p class="text-ctp-subtext0 selection:bg-ctp-sapphire/30">The best police dog mod for GTA V/FiveM.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="w-full py-12">
+            <div class="embla overflow-hidden opacity-0 transition-opacity duration-280 select-none">
+                <div class="embla__container flex touch-pan-y pr-4 md:pr-8">
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-280" src="/img/lighthouse/hero.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/lighthouse/deck.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/lighthouse/pj.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="md:ml-[10vw] ml-0 flex flex-col">
+            <section class="w-full max-w-[100rem] px-6 md:pr-24 pt-2 md:pt-6 text-left">
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">About RQ-Dogs</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>RQ-Dogs is a police dog mod for the popular GTA V launcher <a href="https://fivem.net/" target="_blank" class="text-ctp-flamingo underline">FiveM</a>. FiveM allows players to run their own multiplayer GTA V servers, and install mods of their choosing in those servers.</p>
+                        <p>RQ-Dogs was the <span class="tooltip"><template>And to this day, only</template>first</span> police dog mod to truly replicate the experience of being a dog handler in the real world. The dog runs in front of you, restricted by a lead that you can adjust the length of. The dog can pick up a scent from an abandoned vehicle and track a player all over the map from a scent. The dog can be let off the leash and target an offender, running faster than any player character, and tackle and restrain them. </p>
+                        <p>The dog can search for, and pick up the scent of illicit items dropped in the area. It can also sniff cars and players for illicit items, alerting the dog handler if it finds any. The dog can be used as an intimidation tactic, and set to bark and jump at (restricted by a lead), an offender. You can take the dog off the lead and it will heel, walking next to you rather than in front, matching your speed. The dog can sit on command, and jump in and out of your car as you command it to.</p>
+                        <p>The entire resource is highly-configurable by the server owner that installs the script. Every piece of language can be changed, the behaviour of the dog, what items are considered illicit, etc. etc.</p>
+                        <p>I sell RQ-Dogs on FiveM's marketplace, and server owners purchase the resource for use in their own server.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Why</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>I initially developed RQ-Dogs as a bespoke solution for the server I was playing/working on at the time. I used that server as a beta tester, and seeing the hugely positive feedback from the playerbase, opted to sell the resource.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Tech Stack</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <ul class="list-disc list-inside">
+                            <li>Written in Lua.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        {
+            const initEmbla = () => {
+                const emblaNode = document.querySelector('.embla');
+                if (typeof EmblaCarousel !== 'undefined' && emblaNode) {
+                    const emblaApi = EmblaCarousel(emblaNode, { loop: true, dragFree: true, draggable: true });
+
+                    requestAnimationFrame(() => {
+                        emblaNode.classList.remove('opacity-0');
+                        emblaNode.classList.add('opacity-100');
+
+                        emblaApi.reInit();
+                    });
+
+                } else {
+                    setTimeout(initEmbla, 50);
+                }
+            };
+
+            initEmbla();
+        }
+    </script>
+</main>
+<footer class="mt-24 px-6 pb-8 text-sm text-ctp-subtext1 text-center relative selection:bg-ctp-sapphire/30">
+    <div class="max-w-2xl mx-auto">
+        © <span id="currentYear"></span> Hunter Y
+    </div>
+    <button id="backToTop" class="absolute right-6 bottom-6 text-ctp-subtext1 p-3 transition transform hover:-translate-y-1 cursor-pointer select-none">
+        ↑ Top
+    </button>
+</footer>
+<script src="/js/preload.js"></script>
+<script src="/js/images.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/tooltip.js"></script>
+</body>
+</html>
