@@ -43,7 +43,6 @@
     content: attr(data-end);
     top: 0;
     transform: translateY(100%);
-    color: var(--swap-color, inherit);
 }
 
 .norris-swap:hover span.char::before,
