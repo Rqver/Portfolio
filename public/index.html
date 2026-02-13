@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hunter Y</title>
+    <meta name="description" content="Hunter Yates: Computer Science student in Auckland, NZ.">
+    <meta name="keywords" content="Hunter Y, Hunter Yates, software developer, full stack, backend developer, Auckland, portfolio">
+    <meta name="author" content="Hunter Yates">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hunteryates.nz/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hunter Yates">
+    <meta property="og:description" content="Computer Science student based in Auckland, NZ.">
+    <meta property="og:url" content="https://hunteryates.nz/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +23,24 @@
     <link href="/css/scrollbar.css" rel="stylesheet">
     <link href="/css/swap.css" rel="stylesheet">
     <script src="/js/swap.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Hunter Yates",
+            "url": "https://hunteryates.nz/",
+            "jobTitle": "Computer Science Student",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Auckland",
+                "addressCountry": "NZ"
+            },
+            "sameAs": [
+                "https://github.com/rqver",
+                "https://www.linkedin.com/in/hunter-yates-nz/"
+            ]
+        }
+    </script>
 </head>
 <body class="font-jetbrains-mono bg-ctp-base text-ctp-text">
 <main id="page-content">
@@ -39,7 +67,7 @@
 
                 <p class="hidden md:block text-ctp-surface2 text-sm">|</p>
 
-                <a href="https://github.com/rqver" target="_blank" class="group inline-flex items-center gap-1 text-ctp-text hover:text-ctp-sapphire">
+                <a href="https://www.linkedin.com/in/hunter-yates-nz/" target="_blank" class="group inline-flex items-center gap-1 text-ctp-text hover:text-ctp-sapphire">
                     <svg viewBox="0 0 24 24" class="h-5 w-5 scale-90 fill-current" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"/>
                         <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"/>
@@ -75,7 +103,7 @@
                 <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                     <a href="/projects/dispatch-desk" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/dispatch-desk/hero.webp" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="/img/dispatch-desk/hero.webp" alt="Screenshot of Dispatch Desk" fetchpriority="high" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
                         <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
@@ -83,7 +111,7 @@
                                     Dispatch Desk
                                 </span>
 
-                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
+                                <span class="inline-block select-none translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
                                     →
                                 </span>
                             </h3>
@@ -96,7 +124,7 @@
 
                     <a href="/projects/drive-times" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/drive-times/hero.webp" class="select-none w-full h-full object-cover object-center opacity-0 transition-opacity duration-50">
+                            <img src="/img/drive-times/hero.webp" alt="Screenshot of Drive Times" fetchpriority="high" class="select-none w-full h-full object-cover object-center opacity-0 transition-opacity duration-50">
                         </div>
                         <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
@@ -104,7 +132,7 @@
                                     FENZ Drive Times
                                 </span>
 
-                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
+                                <span class="inline-block select-none translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
                                     →
                                 </span>
                             </h3>
@@ -117,7 +145,7 @@
 
                     <a href="/projects/bbyc/mainsheet" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/mainsheet/hero.webp" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="/img/mainsheet/hero.webp" alt="Screenshot of Mainsheet" fetchpriority="high" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
                         <div class="p-4 selection:bg-ctp-flamingo/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
@@ -125,7 +153,7 @@
                                     Mainsheet
                                 </span>
 
-                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-flamingo">
+                                <span class="inline-block select-none translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-flamingo">
                                     →
                                 </span>
                             </h3>
@@ -138,7 +166,7 @@
 
                     <a href="/projects/frontpage" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/frontpage/hero.webp" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="/img/frontpage/hero.webp" alt="Screenshot of Frontpage" fetchpriority="high" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
                         <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
@@ -146,7 +174,7 @@
                                     Frontpage
                                 </span>
 
-                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
+                                <span class="inline-block select-none translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
                                     →
                                 </span>
                             </h3>
@@ -159,7 +187,7 @@
 
                     <a href="/projects/audio-tui" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/audio-tui/hero.webp" class="select-none w-full h-full object-cover object-left opacity-0 transition-opacity duration-50">
+                            <img src="/img/audio-tui/hero.webp" alt="Screenshot of Audio TUI" fetchpriority="high" class="select-none w-full h-full object-cover object-left opacity-0 transition-opacity duration-50">
                         </div>
                         <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
@@ -167,7 +195,7 @@
                                     Audio TUI
                                 </span>
 
-                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
+                                <span class="inline-block select-none translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
                                     →
                                 </span>
                             </h3>
@@ -180,7 +208,7 @@
 
                     <a href="/projects/rq-dogs" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/rq-dogs/hero.webp" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="/img/rq-dogs/hero.webp" alt="Screenshot of RQ-Dogs" fetchpriority="high" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
                         <div class="p-4 selection:bg-ctp-flamingo/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
@@ -188,7 +216,7 @@
                                     RQ-Dogs
                                 </span>
 
-                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-flamingo">
+                                <span class="inline-block select-none translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-flamingo">
                                     →
                                 </span>
                             </h3>
@@ -201,7 +229,7 @@
 
                     <a href="/projects/bbyc/manifest" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/manifest/hero.webp" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="/img/manifest/hero.webp" alt="Screenshot of Manifest" fetchpriority="low" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
                         <div class="p-4 selection:bg-ctp-flamingo/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
@@ -209,7 +237,7 @@
                                     Manifest
                                 </span>
 
-                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-flamingo">
+                                <span class="inline-block select-none translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-flamingo">
                                     →
                                 </span>
                             </h3>
@@ -222,7 +250,7 @@
 
                     <a href="/projects/portfolio" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/portfolio/hero.webp" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="/img/portfolio/hero.webp" alt="Screenshot of this website" fetchpriority="low" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
                         <div class="p-4 selection:bg-ctp-teal/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
@@ -230,7 +258,7 @@
                                     Portfolio Website
                                 </span>
 
-                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
+                                <span class="inline-block select-none translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-teal">
                                     →
                                 </span>
                             </h3>
@@ -244,7 +272,7 @@
 
                     <a href="/projects/bbyc/lighthouse" class="group block border border-ctp-surface2 rounded-sm p-2 transition hover:bg-ctp-surface0/20">
                         <div class="aspect-video overflow-hidden">
-                            <img src="/img/lighthouse/hero.webp" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
+                            <img src="/img/lighthouse/hero.webp" alt="Picture of the Yacht Club" fetchpriority="low" class="select-none w-full h-full object-cover opacity-0 transition-opacity duration-50">
                         </div>
                         <div class="p-4 selection:bg-ctp-flamingo/30">
                             <h3 class="font-semibold text-lg inline-flex items-center gap-2">
@@ -252,7 +280,7 @@
                                     Lighthouse
                                 </span>
 
-                                <span class="inline-block translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-flamingo">
+                                <span class="inline-block select-none translate-x-[-6px] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 text-ctp-flamingo">
                                     →
                                 </span>
                             </h3>
