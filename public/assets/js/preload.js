@@ -58,6 +58,7 @@ async function loadUrl(url){
     window.initImages();
     window.initToolTips();
     document.title = cached.title;
+    umami.track();
 }
 
 document.body.addEventListener("click", async (e) => {
