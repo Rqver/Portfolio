@@ -1,7 +1,7 @@
 import express from "npm:express"
 import {initRoutes} from "./handlers/routes.ts";
 
-const PORT = 7678;
+const PORT = Number(Deno.env.get("PORT") ?? "7678");
 
 async function main(){
     console.log("Creating express server");
