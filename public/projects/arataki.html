@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arataki | Hunter Y</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=block" rel="stylesheet">
+
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="/css/scrollbar.css" rel="stylesheet">
+
+    <link href="/css/swap.css" rel="stylesheet">
+    <script src="/js/swap.js"></script>
+    <script defer src="https://titiro.hunteryates.nz/script.js" data-website-id="be848d12-001b-4489-a3d3-435534a39985"></script>
+</head>
+<body class="font-jetbrains-mono bg-ctp-base text-ctp-text">
+
+<main id="page-content">
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <div class="min-h-screen">
+        <div class="md:ml-[10vw] ml-0 flex flex-col">
+            <section class="w-full max-w-6xl px-6 pt-6 md:pt-16 text-left">
+                <a href="/" class="group inline-flex items-center gap-2 text-ctp-subtext1 hover:text-ctp-teal transition-colors mb-8 text-sm select-none">
+                    <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+                    Back to Projects
+                </a>
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+
+                    <div class="max-w-2xl">
+                        <h1 class="text-4xl font-bold text-ctp-teal mb-2 selection:bg-ctp-teal/30">Arataki</h1>
+                        <p class="text-ctp-subtext0 selection:bg-ctp-sapphire/30">A deployment manager designed for use over MCP.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="w-full py-12">
+            <div class="embla overflow-hidden opacity-0 transition-opacity duration-280 select-none">
+                <div class="embla__container flex touch-pan-y pr-4 md:pr-8">
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/arataki/hero.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/arataki/service.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/arataki/environment.webp">
+                        </div>
+                    </div>
+
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/arataki/database.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="md:ml-[10vw] ml-0 flex flex-col">
+            <section class="w-full max-w-[100rem] px-6 md:pr-24 pt-2 md:pt-6 text-left">
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">About Arataki</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>Arataki is a self-hosted deployment & process manager that runs all of my personal projects, including the website you are reading this on. It replaced a manual loop of SSHing into a server, pulling, restarting, and hand-writing nginx & certbot configs with a single web panel and an <span class="tooltip"><template><b>M</b>odel <b>C</b>ontext <b>P</b>rotocol</template>MCP</span> server.</p>
+                        <p>Deploying a new app is done by picking a GitHub repo and optionally a subdomain; Arataki allocates a port, writes the systemd unit, creates the DNS record in Cloudflare, issues a TLS certificate, and sets up nginx. Services can be public websites, internal APIs, or headless workers, and each service has a page with live status, CPU & memory use, logs, environment variables, and a full deploy history.</p>
+                        <p>Arataki also manages each app's SQLite databases. Managed databases are continuously replicated to object storage by <a href="https://litestream.io/" target="_blank" class="text-ctp-teal underline">Litestream</a>, and can be browsed and queried (read-only) directly in the panel.</p>
+                        <p>Everything the panel can do is also exposed as tools over MCP. Claude can deploy a project, restart it, read logs from a live project, query a projects live database, check a projects resource usage, etc.: "Commit, push and redeploy via Arataki" or "There's an issue with the database on X app, explore it via Arataki"</p>
+                        <p>MCP actions are recorded in the same audit trail as panel actions, environment variable values are never exposed, and each database has to be explicitly opted-in to being queryable over MCP.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Why</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>The number of projects I self-host kept growing (seventeen services at the time of writing), and every new project meant SSHing into the server to hand-write an nginx config and a systemd unit, and set up DNS records & TLS certificates. Every update to an existing project meant SSHing in to pull and restart it.</p>
+                        <p>The bigger motivation though was MCP. I manage/do a lot through Claude, and I wanted my server to be something an AI agent could safely operate.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Tech Stack</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <ul class="list-disc list-inside">
+                            <li>Written in TypeScript using <a href="https://deno.com/" target="_blank" class="text-ctp-teal underline">Deno</a> as a runtime.</li>
+                            <li>The frontend is built using <a href="https://tailwindcss.com/" target="_blank" class="text-ctp-teal underline">Tailwind CSS</a>.</li>
+                            <li>SQLite is used as a database.</li>
+                            <li>The MCP server is built using the official <a href="https://github.com/modelcontextprotocol/typescript-sdk" target="_blank" class="text-ctp-teal underline">MCP TypeScript SDK</a>.</li>
+                            <li>On the server, Arataki drives systemd, nginx, certbot, Cloudflare DNS, and <a href="https://litestream.io/" target="_blank" class="text-ctp-teal underline">Litestream</a> backups to Cloudflare R2.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <script>
+        {
+            const initEmbla = () => {
+                const emblaNode = document.querySelector('.embla');
+                if (typeof EmblaCarousel !== 'undefined' && emblaNode) {
+                    const emblaApi = EmblaCarousel(emblaNode, { loop: true, dragFree: true, draggable: true });
+
+                    requestAnimationFrame(() => {
+                        emblaNode.classList.remove('opacity-0');
+                        emblaNode.classList.add('opacity-100');
+
+                        emblaApi.reInit();
+                    });
+
+                } else {
+                    setTimeout(initEmbla, 50);
+                }
+            };
+
+            initEmbla();
+        }
+    </script>
+</main>
+<footer class="mt-24 px-6 pb-8 text-sm text-ctp-subtext1 text-center relative selection:bg-ctp-sapphire/30">
+    <div class="max-w-2xl mx-auto">
+        © <span id="currentYear"></span> Hunter Y
+    </div>
+    <button id="backToTop" class="absolute right-6 bottom-6 text-ctp-subtext1 p-3 transition transform hover:-translate-y-1 cursor-pointer select-none">
+        ↑ Top
+    </button>
+</footer>
+<script src="/js/preload.js"></script>
+<script src="/js/images.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/tooltip.js"></script>
+</body>
+</html>
