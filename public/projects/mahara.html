@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mahara | Hunter Y</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=block" rel="stylesheet">
+
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="/css/scrollbar.css" rel="stylesheet">
+
+    <link href="/css/swap.css" rel="stylesheet">
+    <script src="/js/swap.js"></script>
+    <script defer src="https://titiro.hunteryates.nz/script.js" data-website-id="be848d12-001b-4489-a3d3-435534a39985"></script>
+</head>
+<body class="font-jetbrains-mono bg-ctp-base text-ctp-text">
+
+<main id="page-content">
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <div class="min-h-screen">
+        <div class="md:ml-[10vw] ml-0 flex flex-col">
+            <section class="w-full max-w-6xl px-6 pt-6 md:pt-16 text-left">
+                <a href="/" class="group inline-flex items-center gap-2 text-ctp-subtext1 hover:text-ctp-teal transition-colors mb-8 text-sm select-none">
+                    <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+                    Back to Projects
+                </a>
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+
+                    <div class="max-w-2xl">
+                        <h1 class="text-4xl font-bold text-ctp-teal mb-2 selection:bg-ctp-teal/30">Mahara</h1>
+                        <p class="text-ctp-subtext0 selection:bg-ctp-sapphire/30">Persistent long-term memory for Claude.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="w-full py-12">
+            <div class="embla overflow-hidden opacity-0 transition-opacity duration-280 select-none">
+                <div class="embla__container flex touch-pan-y pr-4 md:pr-8">
+                    <div class="embla__slide flex-none w-[90vw] md:w-[900px] min-w-0 pl-4 md:pl-8">
+                        <div class="relative aspect-video shadow-xl">
+                            <img class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-280" src="/img/mahara/hero.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="md:ml-[10vw] ml-0 flex flex-col">
+            <section class="w-full max-w-[100rem] px-6 md:pr-24 pt-2 md:pt-6 text-left">
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">About Mahara</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>Mahara is a persistent long-term memory system for Claude. It's a personal wiki of prose dossier pages; one per person, project, organisation, place, piece of infrastructure, and preference in my life, plus an append-only log of raw observations, all exposed to Claude over <span class="tooltip"><template><b>M</b>odel <b>C</b>ontext <b>P</b>rotocol</template>MCP</span>.</p>
+                        <p>Claude is instructed to recall from Mahara before discussing anything in my life, and to capture into it liberally. Whenever a conversation reveals something worth knowing later; a decision, a preference, a new person or project, Claude records it as an observation immediately, and a scheduled lint agent later folds observations into the right pages and dedupes.</p>
+                        <p>Pages are wikilinked to each other aggressively. Fetching a page returns the page itself, stubs of every page it links to and every page that links back, and the most recent observations about it.</p>
+                        <p>There's also a web panel for me: an index of every page, a feed of recent observations, search, and editing, so I can see and correct everything Claude remembers.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Why</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <p>Every conversation with Claude starts from a blank context. I use Claude across a lot of interfaces; Claude Code in the terminal, claude.ai, my phone, and I was re-explaining who people were, what projects existed, and what state everything was in, in every single conversation. Mahara gives all surfaces of Claude one shared, persistent memory.</p>
+                        <p>It also compounds: the more I use Claude, the more it captures, and the better every future conversation gets.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h2 class="text-2xl font-bold text-ctp-text mb-2 selection:bg-ctp-sapphire/30">Tech Stack</h2>
+                    <div class="text-ctp-subtext1 space-y-3 selection:bg-ctp-sapphire/25">
+                        <ul class="list-disc list-inside">
+                            <li>Written in TypeScript using <a href="https://deno.com/" target="_blank" class="text-ctp-teal underline">Deno</a> as a runtime.</li>
+                            <li>The frontend is built using <a href="https://tailwindcss.com/" target="_blank" class="text-ctp-teal underline">Tailwind CSS</a>.</li>
+                            <li>SQLite is used as a database.</li>
+                            <li>The MCP server is built using the official <a href="https://github.com/modelcontextprotocol/typescript-sdk" target="_blank" class="text-ctp-teal underline">MCP TypeScript SDK</a>.</li>
+                            <li>Deployed (and backed up) by <a href="/projects/arataki" class="text-ctp-teal underline">Arataki</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <script>
+        {
+            const initEmbla = () => {
+                const emblaNode = document.querySelector('.embla');
+                if (typeof EmblaCarousel !== 'undefined' && emblaNode) {
+                    const emblaApi = EmblaCarousel(emblaNode, { loop: true, dragFree: true, draggable: true });
+
+                    requestAnimationFrame(() => {
+                        emblaNode.classList.remove('opacity-0');
+                        emblaNode.classList.add('opacity-100');
+
+                        emblaApi.reInit();
+                    });
+
+                } else {
+                    setTimeout(initEmbla, 50);
+                }
+            };
+
+            initEmbla();
+        }
+    </script>
+</main>
+<footer class="mt-24 px-6 pb-8 text-sm text-ctp-subtext1 text-center relative selection:bg-ctp-sapphire/30">
+    <div class="max-w-2xl mx-auto">
+        © <span id="currentYear"></span> Hunter Y
+    </div>
+    <button id="backToTop" class="absolute right-6 bottom-6 text-ctp-subtext1 p-3 transition transform hover:-translate-y-1 cursor-pointer select-none">
+        ↑ Top
+    </button>
+</footer>
+<script src="/js/preload.js"></script>
+<script src="/js/images.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/tooltip.js"></script>
+</body>
+</html>
