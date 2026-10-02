@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 My personal portfolio website, designed to showcase some of the projects I have worked on.
-[hunteryates.nz](https://hunteryates.nz/)
+[projects.hunteryates.nz](https://projects.hunteryates.nz/)
 
 ![Screenshot](public/assets/img/portfolio/hero.webp)
 
