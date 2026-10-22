@@ -26,7 +26,14 @@ interface RouteDefinition {
 }
 
 
+// Keeps every response (HTML, the CV PDF and images) out of search results.
+function preventSearchIndexing(_req: Request, res: Response, next: NextFunction) {
+    res.setHeader("X-Robots-Tag", "noindex, nofollow");
+    next();
+}
+
 export async function initRoutes(app: Express, dir: string) {
+    app.use(preventSearchIndexing);
     app.use(express.static(join(Deno.cwd(), "public/assets")));
 
     const routesDir = join(Deno.cwd(), dir);
